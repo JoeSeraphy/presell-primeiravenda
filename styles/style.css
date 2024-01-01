@@ -1,0 +1,72 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url(/assets/image/bg-desktop.webp) no-repeat center;
+  background-size: cover;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  background: rgba(223, 173, 107, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.title {
+  color: #ffffff;
+  font-size: 3.2rem;
+  font-weight: bold;
+  width: 600px;
+  text-shadow: 2px 2px black;
+}
+
+.logo {
+  width: 60rem;
+  margin: 0 auto;
+  filter: drop-shadow(4px 4px 6px rgb(29, 29, 29));
+}
+
+.button {
+  background-color: dfad6b;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition: ease-in 0.3s;
+  box-shadow: 1px 1px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+@media (max-width: 425px) {
+  body {
+    background: url(/assets/image/bg-mobile.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .logo {
+    width: 30rem;
+  }
+
+  .title {
+    font-size: 22px;
+    width: 30rem;
+  }
+}
